@@ -7,7 +7,7 @@ EAPI=5
 inherit git-2 eutils
 
 DESCRIPTION="Swoops down and creates your Perl 6 project Makefile for you"
-HOMEPAGE="git://github.com/masak/ufo"
+HOMEPAGE="https://github.com/masak/ufo"
 EGIT_REPO_URI="git://github.com/masak/ufo.git"
 
 LICENSE=""
