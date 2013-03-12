@@ -6,21 +6,23 @@ EAPI=5
 
 inherit git-2 eutils
 
-DESCRIPTION="Swoops down and creates your Perl 6 project Makefile for you"
-HOMEPAGE="https://github.com/masak/ufo"
+DESCRIPTION="ignore stuff"
+HOMEPAGE="https://github.com/Cynede/ignore"
 
-#default is masak repo
-EGIT_REPO_URI="git://github.com/Cynede/ufo.git"
+EGIT_REPO_URI="git://github.com/Cynede/ignore.git"
+#EGIT_HAS_SUBMODULES="true"
 
 LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="dev-lang/rakudo"
+DEPEND="dev-lang/rakudo
+dev-perl/filetools
+dev-util/ufo"
 RDEPEND="${DEPEND}"
 
 src_compile() {
-	./bin/ufo || die
+	ufo
 }
 
 src_install() {
