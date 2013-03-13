@@ -24,5 +24,5 @@ src_compile() {
 }
 
 src_install() {
-	DESTDIR=${D} perl6 bootstrap.pl --nodeps || die
+	DESTDIR=${D} perl6 bootstrap.pl || die
 }
