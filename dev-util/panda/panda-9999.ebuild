@@ -16,7 +16,8 @@ LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="dev-lang/rakudo"
+DEPEND="dev-lang/rakudo
+!dev-perl/filetools"
 RDEPEND="${DEPEND}"
 
 src_compile() {

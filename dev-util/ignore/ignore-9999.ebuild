@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 DEPEND="dev-lang/rakudo
-dev-perl/filetools
+|| ( dev-perl/filetools dev-util/panda )
 dev-util/ufo"
 RDEPEND="${DEPEND}"
 

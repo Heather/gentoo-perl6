@@ -15,7 +15,8 @@ SLOT="0"
 KEYWORDS=""
 IUSE=""
 DEPEND="dev-lang/rakudo
-dev-util/ufo"
+dev-util/ufo
+!dev-util/panda"
 RDEPEND="${DEPEND}"
 
 src_compile() {
