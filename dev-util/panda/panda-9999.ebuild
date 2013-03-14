@@ -25,5 +25,6 @@ src_compile() {
 }
 
 src_install() {
-	DESTDIR=${D} perl6 bootstrap.pl || die
+	#This will be eclass work:
+	DESTDIR=${D} PREFIX="/usr/lib/parrot/5.1.0/languages/perl6/site/" perl6 bootstrap.pl || die
 }
