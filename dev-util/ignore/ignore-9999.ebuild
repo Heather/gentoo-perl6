@@ -7,10 +7,9 @@ EAPI=5
 inherit git-2 eutils
 
 DESCRIPTION="ignore stuff"
-HOMEPAGE="https://github.com/Cynede/ignore"
+HOMEPAGE="https://github.com/Heather/ignore"
 
-EGIT_REPO_URI="git://github.com/Cynede/ignore.git"
-#EGIT_HAS_SUBMODULES="true"
+EGIT_REPO_URI="git://github.com/Heather/ignore.git"
 
 LICENSE=""
 SLOT="0"

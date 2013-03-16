@@ -10,7 +10,7 @@ DESCRIPTION="Swoops down and creates your Perl 6 project Makefile for you"
 HOMEPAGE="https://github.com/masak/ufo"
 
 #default is masak repo
-EGIT_REPO_URI="git://github.com/Cynede/ufo.git"
+EGIT_REPO_URI="git://github.com/Heather/ufo.git"
 
 LICENSE=""
 SLOT="0"

@@ -7,8 +7,8 @@ EAPI=5
 inherit git-2 eutils
 
 DESCRIPTION="perl6 File Tools"
-HOMEPAGE="https://github.com/Cynede/perl6-File-Tools"
-EGIT_REPO_URI="git://github.com/Cynede/perl6-File-Tools.git"
+HOMEPAGE="https://github.com/Heather/perl6-File-Tools"
+EGIT_REPO_URI="git://github.com/Heather/perl6-File-Tools.git"
 
 LICENSE=""
 SLOT="0"

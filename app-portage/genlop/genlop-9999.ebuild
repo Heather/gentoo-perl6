@@ -6,7 +6,8 @@ EAPI="5"
 
 inherit git-2 bash-completion-r1
 
-EGIT_REPO_URI="git://github.com/Cynede/genlop.git"
+EGIT_REPO_URI="git://github.com/Heather/genlop.git"
+
 DESCRIPTION="A nice emerge.log parser"
 HOMEPAGE="http://www.gentoo.org/proj/en/perl"
 SRC_URI=""
