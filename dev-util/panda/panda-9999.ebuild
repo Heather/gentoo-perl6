@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit git-2 eutils
+inherit git-2 eutils perl6
 
 DESCRIPTION="Panda is an implementation of a Perl 6 module manager specification."
 
