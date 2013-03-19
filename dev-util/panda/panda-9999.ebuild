@@ -16,8 +16,7 @@ LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="dev-lang/rakudo
-!dev-perl/filetools"
+DEPEND="!dev-perl/filetools"
 RDEPEND="${DEPEND}"
 
 src_compile() {
@@ -25,6 +24,5 @@ src_compile() {
 }
 
 src_install() {
-	#This will be eclass work:
-	DESTDIR=${D} PREFIX="/usr/lib/parrot/5.1.0/languages/perl6/site/" perl6 bootstrap.pl || die
+	DESTDIR=${D} PREFIX="/usr" perl6 bootstrap.pl || die
 }

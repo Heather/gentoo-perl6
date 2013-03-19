@@ -16,6 +16,7 @@ DEPEND=""
 PROPERTIES="virtual"
 
 src_install() {
-	insinto /etc/env.d
-	newins "${FILESDIR}"/80perl6 80perl6 || die
+	# WRONG! :
+	#insinto /etc/env.d
+	#newins "${FILESDIR}"/80perl6 80perl6 || die
 }
