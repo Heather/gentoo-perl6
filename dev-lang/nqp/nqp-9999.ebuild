@@ -4,7 +4,7 @@
 
 EAPI=3
 
-inherit eutils multilib
+inherit eutils multilib git-2
 
 PARROT_VERSION="4.4.0"
 
