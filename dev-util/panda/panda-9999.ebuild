@@ -8,9 +8,8 @@ inherit git-2 eutils perl6
 
 DESCRIPTION="Panda is an implementation of a Perl 6 module manager specification."
 
-#originally tadzik
-HOMEPAGE="https://github.com/Heather/panda"
-EGIT_REPO_URI="git://github.com/Heather/panda.git"
+HOMEPAGE="https://github.com/tadzik/panda"
+EGIT_REPO_URI="git://github.com/tadzik/panda.git"
 
 LICENSE=""
 SLOT="0"
