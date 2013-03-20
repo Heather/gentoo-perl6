@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-lang/rakudo/rakudo-9999.ebuild $
 
-EAPI=5
+EAPI="5"
 
 PARROT_VERSION="4.4.0"
 NQP_VERSION="${PV}"
@@ -35,12 +35,15 @@ src_configure() {
 	perl Configure.pl || die
 }
 
+src_compile() {
+	emake PERL6LIB="/usr/lib" || die
+}
+
 src_test() {
 	emake -j1 test || die
 }
 
 src_install() {
-	export PERL6LIB="/usr/lib" 
 	emake DESTDIR="${ED}" install || die
 
 	dodoc CREDITS README docs/ChangeLog docs/ROADMAP || die
