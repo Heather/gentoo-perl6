@@ -16,6 +16,10 @@ DEPEND=""
 PROPERTIES="virtual"
 
 src_install() {
+	# I do it for panda and for some other perl6 packages
+	# who don't separate prefix for bin and lib
+	# it's WORKING TEMPorary solution without touching anything outside
+
 	insinto /etc/env.d
 	newins "${FILESDIR}"/80perl6 80perl6 || die
 }
