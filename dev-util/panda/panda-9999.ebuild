@@ -23,5 +23,5 @@ src_compile() {
 }
 
 src_install() {
-	DESTDIR=${D} PREFIX="/usr" perl6 bootstrap.pl || die
+	DESTDIR="${D}"/usr perl6 bootstrap.pl || die
 }
