@@ -15,8 +15,4 @@ DEPEND=""
 #To-be-finalized
 PROPERTIES="virtual"
 
-src_install() {
-	# WRONG! :
-	#insinto /etc/env.d
-	#newins "${FILESDIR}"/80perl6 80perl6 || die
-}
+src_install() { :; }

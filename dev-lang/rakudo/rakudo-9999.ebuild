@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-lang/rakudo/rakudo-9999.ebuild $
 
-EAPI=3
+EAPI=5
 
 PARROT_VERSION="4.4.0"
 NQP_VERSION="${PV}"
@@ -14,6 +14,7 @@ HOMEPAGE="http://rakudo.org/"
 
 EGIT_REPO_URI="git://github.com/Heather/rakudo.git"
 EGIT_MASTER="nom"
+
 #SRC_URI="http://rakudo.org/downloads/${PN}/${P}.tar.gz"
 
 LICENSE="Artistic-2"
@@ -27,7 +28,6 @@ DEPEND="${RDEPEND}
 	dev-lang/perl"
 
 src_prepare() {
-	export PERL6LIB="/usr/lib"
 	sed -i "s,\$(DOCDIR)/rakudo$,&-${PVR}," tools/build/Makefile.in || die
 }
 
@@ -40,6 +40,7 @@ src_test() {
 }
 
 src_install() {
+	export PERL6LIB="/usr/lib" 
 	emake DESTDIR="${ED}" install || die
 
 	dodoc CREDITS README docs/ChangeLog docs/ROADMAP || die
