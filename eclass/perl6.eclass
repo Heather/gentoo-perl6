@@ -12,7 +12,5 @@
 #  *) ;;
 #esac
 
-NO_RAKUDO_DEPEND="virtual/perl6"
-DEPEND="${NO_RAKUDO_DEPEND}"
-
-inherit eutils
+NO_PERL6_DEPEND="virtual/perl6"
+DEPEND="${NO_PERL6_DEPEND}"

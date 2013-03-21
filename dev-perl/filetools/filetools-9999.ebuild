@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI="5"
 
-inherit git-2 eutils
+inherit git-2 ufo
 
 DESCRIPTION="perl6 File Tools"
 HOMEPAGE="https://github.com/Heather/perl6-File-Tools"
@@ -14,15 +14,5 @@ LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="dev-lang/rakudo
-dev-util/ufo
-!dev-util/panda"
+DEPEND="!dev-util/panda"
 RDEPEND="${DEPEND}"
-
-src_compile() {
-	ufo
-}
-
-src_install() {
-	make DESTDIR=${D} install || die
-}
