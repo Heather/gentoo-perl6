@@ -24,14 +24,13 @@ ufo_src_configure() { :; }
 # @FUNCTION: ufo_src_compile
 # @DESCRIPTION: Runs ufo.
 ufo_src_compile() {
-	cd "${S}"
 	ufo || die "ufo failed"
 }
 
 # @FUNCTION: ufosrc_install
 # @DESCRIPTION: installs via makefile
 ufo_src_install () {
-	make DESTDIR=${D} install || die
+	make DESTDIR="${D}" install || die
 }
 
 EXPORT_FUNCTIONS src_configure src_compile src_install
