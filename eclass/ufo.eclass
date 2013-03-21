@@ -15,7 +15,7 @@ esac
 inherit perl6
 
 NO_UFO_DEPEND="dev-util/ufo"
-DEPEND="${NO_RAKUDO_DEPEND}"
+DEPEND="${NO_UFO_DEPEND}"
 
 # @FUNCTION: ufo_src_configure
 # @DESCRIPTION: Runs nothing
