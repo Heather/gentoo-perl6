@@ -6,7 +6,7 @@ EAPI="5"
 
 inherit git-2 ufo
 
-DESCRIPTION="perl6 File Tools"
+DESCRIPTION="perl6 LWP Simple"
 HOMEPAGE="https://github.com/cosimo/perl6-lwp-simple"
 EGIT_REPO_URI="git://github.com/cosimo/perl6-lwp-simple.git"
 

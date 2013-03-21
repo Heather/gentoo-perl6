@@ -6,7 +6,7 @@ EAPI="5"
 
 inherit git-2 ufo
 
-DESCRIPTION="perl6 File Tools"
+DESCRIPTION="perl6 MIME Base64"
 HOMEPAGE="https://github.com/moritz/Perl6-MIME-Base64"
 EGIT_REPO_URI="git://github.com/moritz/Perl6-MIME-Base64.git"
 

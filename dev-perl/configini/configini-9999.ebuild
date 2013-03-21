@@ -6,7 +6,7 @@ EAPI="5"
 
 inherit git-2 ufo
 
-DESCRIPTION="perl6 File Tools"
+DESCRIPTION="perl6 Config INI"
 HOMEPAGE="https://github.com/tadzik/perl6-Config-INI"
 EGIT_REPO_URI="git://github.com/tadzik/perl6-Config-INI.git"
 
