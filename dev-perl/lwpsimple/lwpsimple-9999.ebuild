@@ -7,12 +7,12 @@ EAPI="5"
 inherit git-2 ufo
 
 DESCRIPTION="perl6 File Tools"
-HOMEPAGE="https://github.com/Heather/perl6-File-Tools"
-EGIT_REPO_URI="git://github.com/Heather/perl6-File-Tools.git"
+HOMEPAGE="https://github.com/cosimo/perl6-lwp-simple"
+EGIT_REPO_URI="git://github.com/cosimo/perl6-lwp-simple.git"
 
 LICENSE=""
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
-DEPEND="!dev-util/panda"
+DEPEND=""
 RDEPEND="${DEPEND}"

@@ -12,7 +12,7 @@ EGIT_REPO_URI="git://github.com/tadzik/perl6-Config-INI.git"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
