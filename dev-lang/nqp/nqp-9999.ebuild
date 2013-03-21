@@ -37,7 +37,7 @@ src_configure() {
 }
 
 src_compile() {
-	emake -j1 || die
+	emake -j1 || die #nowarn
 }
 
 src_test() {
