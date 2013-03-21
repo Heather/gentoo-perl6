@@ -4,26 +4,16 @@
 
 EAPI=5
 
-inherit git-2 eutils
+inherit git-2 ufo
 
 DESCRIPTION="ignore stuff"
 HOMEPAGE="https://github.com/Heather/ignore"
-
 EGIT_REPO_URI="git://github.com/Heather/ignore.git"
 
 LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="dev-lang/rakudo
-|| ( dev-perl/filetools dev-util/panda )
+DEPEND="|| ( dev-perl/filetools dev-util/panda )
 dev-util/ufo"
 RDEPEND="${DEPEND}"
-
-src_compile() {
-	ufo
-}
-
-src_install() {
-	PREFIX=${D}/usr make -e install || die
-}
