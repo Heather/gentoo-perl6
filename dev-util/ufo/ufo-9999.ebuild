@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit git-2 eutils
+inherit git-2 perl6
 
 DESCRIPTION="Swoops down and creates your Perl 6 project Makefile for you"
 HOMEPAGE="https://github.com/masak/ufo"
@@ -16,7 +16,7 @@ LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="dev-lang/rakudo"
+DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_compile() {
@@ -24,5 +24,5 @@ src_compile() {
 }
 
 src_install() {
-	PREFIX=${D}/usr make -e install || die
+	DESTDIR="${D}" PREFIX=/usr make -e install || die
 }
