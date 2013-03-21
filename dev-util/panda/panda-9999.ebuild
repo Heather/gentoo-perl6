@@ -15,13 +15,20 @@ LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="!dev-perl/filetools"
+DEPEND="!dev-perl/filetools
+!dev-perl/mimebase64
+!dev-perl/uri
+!dev-perl/lwpsimple"
 RDEPEND="${DEPEND}"
 
-src_compile() {
-	:;
-}
+# NO
+src_configure() { :; }
+src_compile() { :; }
 
+# TRUE PANDA INSTALL
+PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
 src_install() {
-	DESTDIR="${D}"/usr perl6 bootstrap.pl || die
+	DESTDIR="${D}"/"$PERL6SITE" perl6 bootstrap.pl || die
+	dobin "${D}"/"$PERL6SITE"/bin/panda || die
+	rm -rf "${D}"/"$PERL6SITE"/bin || die
 }
