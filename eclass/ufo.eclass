@@ -19,7 +19,9 @@ DEPEND="${NO_UFO_DEPEND}"
 
 # @FUNCTION: ufo_src_configure
 # @DESCRIPTION: Runs nothing
-ufo_src_configure() { :; }
+ufo_src_configure() {
+	PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
+}
 
 # @FUNCTION: ufo_src_compile
 # @DESCRIPTION: Runs ufo.
@@ -35,7 +37,6 @@ ufo_src_test() {
 
 # @FUNCTION: ufosrc_install
 # @DESCRIPTION: installs via makefile
-PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
 ufo_src_install () {
 	make DESTDIR="${D}" install || die
 	if [ -d "${D}"/"$PERL6SITE"/bin ]; then

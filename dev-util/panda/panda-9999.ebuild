@@ -21,12 +21,12 @@ DEPEND="!dev-perl/filetools
 !dev-perl/lwpsimple"
 RDEPEND="${DEPEND}"
 
-# NO
-src_configure() { :; }
-src_compile() { :; }
+src_configure() {
+          PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
+}
+src_compile() { :; } # NO
 
 # TRUE PANDA INSTALL
-PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
 src_install() {
 	DESTDIR="${D}"/"$PERL6SITE" perl6 bootstrap.pl || die
 	dobin "${D}"/"$PERL6SITE"/bin/panda || die
