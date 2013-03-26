@@ -14,6 +14,5 @@ LICENSE=""
 SLOT="0"
 KEYWORDS=""
 IUSE=""
-DEPEND="|| ( dev-perl/filetools dev-util/panda )
-dev-util/ufo"
+DEPEND="|| ( dev-perl/filetools dev-util/panda )"
 RDEPEND="${DEPEND}"

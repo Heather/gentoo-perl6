@@ -35,8 +35,13 @@ ufo_src_test() {
 
 # @FUNCTION: ufosrc_install
 # @DESCRIPTION: installs via makefile
+PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
 ufo_src_install () {
 	make DESTDIR="${D}" install || die
+	if [ -d "${D}"/"$PERL6SITE"/bin ]; then
+	  dobin "${D}"/"$PERL6SITE"/bin/* || die
+	  rm -rf "${D}"/"$PERL6SITE"/bin || die
+	fi
 }
 
 EXPORT_FUNCTIONS src_configure src_compile src_test src_install
