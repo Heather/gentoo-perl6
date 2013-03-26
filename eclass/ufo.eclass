@@ -27,10 +27,16 @@ ufo_src_compile() {
 	ufo || die "ufo failed"
 }
 
+# @FUNCTION: ufo_src_test
+# @DESCRIPTION: Runs tests.
+ufo_src_test() {
+	make test || die "tests failed"
+}
+
 # @FUNCTION: ufosrc_install
 # @DESCRIPTION: installs via makefile
 ufo_src_install () {
 	make DESTDIR="${D}" install || die
 }
 
-EXPORT_FUNCTIONS src_configure src_compile src_install
+EXPORT_FUNCTIONS src_configure src_compile src_test src_install
