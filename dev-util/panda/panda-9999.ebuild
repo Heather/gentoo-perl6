@@ -13,7 +13,7 @@ EGIT_REPO_URI="git://github.com/tadzik/panda.git"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 DEPEND="!dev-perl/filetools
 !dev-perl/mimebase64
@@ -22,7 +22,7 @@ DEPEND="!dev-perl/filetools
 RDEPEND="${DEPEND}"
 
 src_configure() {
-          PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
+PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
 }
 src_compile() { :; } # NO
 

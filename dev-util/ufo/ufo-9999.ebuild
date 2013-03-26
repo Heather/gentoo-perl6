@@ -14,7 +14,7 @@ EGIT_REPO_URI="git://github.com/Heather/ufo.git"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
