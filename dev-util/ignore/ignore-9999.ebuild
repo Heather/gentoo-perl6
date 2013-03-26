@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit git-2 ufo
+inherit git-2 crystalmaiden
 
 DESCRIPTION="ignore stuff"
 HOMEPAGE="https://github.com/Heather/ignore"
