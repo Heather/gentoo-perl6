@@ -12,7 +12,7 @@ EGIT_REPO_URI="git://github.com/Heather/ignore.git"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 DEPEND="|| ( dev-perl/filetools dev-util/panda )"
 RDEPEND="${DEPEND}"
