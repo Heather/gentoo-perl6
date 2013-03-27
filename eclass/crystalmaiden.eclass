@@ -12,36 +12,31 @@ case ${EAPI:-0} in
   *) ;;
 esac
 
-#                            !!! CRYSTAL MAIDEN !!!
-
 inherit perl6
 
 NO_CM_DEPEND="app-portage/cm"
 DEPEND="${NO_CM_DEPEND}"
 
-# @FUNCTION: ufo_src_configure
+# @FUNCTION: crystalmaiden_src_configure
 # @DESCRIPTION: Runs nothing
-crystalmaiden_src_configure() {
-#PERL6SITE=$(perl6 -e 'print %*CUSTOM_LIB<site>')
-	:;
-}
+crystalmaiden_src_configure() { :; }
 
 # @FUNCTION: crystalmaiden_src_compile
 # @DESCRIPTION: Runs CRYSTAL MAIDEN
 crystalmaiden_src_compile() {
-	cm src_compile || die "CM failed"
+	cm src compile || die "CM failed"
 }
 
 # @FUNCTION: crystalmaiden_src_test
 # @DESCRIPTION: Runs tests.
 crystalmaiden_src_test() {
-	cm src_test || die "tests failed"
+	cm src test || die "tests failed"
 }
 
 # @FUNCTION: crystalmaiden_install
 # @DESCRIPTION: installs via CRYSTAL MAIDEN
 crystalmaiden_src_install () {
-	cm src_install ${D} || die "install fails"
+	cm src install ${D} || die "install fails"
 }
 
 EXPORT_FUNCTIONS src_configure src_compile src_test src_install
