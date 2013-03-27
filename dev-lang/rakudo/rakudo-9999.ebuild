@@ -11,8 +11,7 @@ inherit eutils multilib git-2
 
 DESCRIPTION="A Perl 6 implementation built on the Parrot virtual machine"
 HOMEPAGE="http://rakudo.org/"
-
-EGIT_REPO_URI="git://github.com/Heather/rakudo.git"
+EGIT_REPO_URI="git://github.com/rakudo/rakudo.git"
 EGIT_MASTER="nom"
 
 #SRC_URI="http://rakudo.org/downloads/${PN}/${P}.tar.gz"
