@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit git-2 ufo
+inherit git-2 crystalmaiden
 
 DESCRIPTION="uri"
 HOMEPAGE="https://github.com/ihrd/uri"

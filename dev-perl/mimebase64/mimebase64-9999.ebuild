@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit git-2 ufo
+inherit git-2 crystalmaiden
 
 DESCRIPTION="perl6 MIME Base64"
 HOMEPAGE="https://github.com/moritz/Perl6-MIME-Base64"

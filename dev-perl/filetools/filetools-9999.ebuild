@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit git-2 ufo
+inherit git-2 crystalmaiden
 
 DESCRIPTION="perl6 File Tools"
 HOMEPAGE="https://github.com/Heather/perl6-File-Tools"

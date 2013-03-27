@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit git-2 ufo
+inherit git-2 crystalmaiden
 
 DESCRIPTION="perl6 LWP Simple"
 HOMEPAGE="https://github.com/cosimo/perl6-lwp-simple"
