@@ -6,11 +6,5 @@
 # @MAINTAINER: heather@cynede.net
 # @BLURB: common settings and functions for perl6 related packages
 
-#case ${EAPI:-0} in
-#  0) die "this eclass doesn't support EAPI 0" ;;
-#  1|2|3) ;;
-#  *) ;;
-#esac
-
 NO_PERL6_DEPEND="virtual/perl6"
 DEPEND="${NO_PERL6_DEPEND}"

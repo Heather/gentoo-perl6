@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit git-2
+inherit git-2 perl6
 
 DESCRIPTION="Crystal Maiden"
 HOMEPAGE="https://github.com/Heather/CrystalMaiden"
